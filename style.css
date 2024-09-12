@@ -3,3 +3,47 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --headerheight: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  height: var(--headerheight);
+}
+
+section {
+  padding: var(--headerheight) 0px 0px;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+section:nth-child(even) {
+  background-color: lightgray;
+}
+
+#Home {
+  background-image: url(images/temp-image-300x224.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0px 200px;
+}
+
+#Home p {
+  width: 300px;
+}
+
+#Sec1 {
+}
