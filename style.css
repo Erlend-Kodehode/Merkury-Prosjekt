@@ -3,12 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Header height is a variable that is set to the height of the header/nav and the top padding of the sections */
 :root {
   --headerheight: 100px;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* The font used on most of the text on the page */
+/* .main-font {
+} */
+
+h1 {
+  font-size: 50px;
 }
 
 nav {
@@ -21,6 +31,7 @@ nav {
   height: var(--headerheight);
   background-color: gray;
 }
+
 nav a {
   background-color: white;
   width: 100px;
@@ -31,7 +42,7 @@ nav a {
 }
 
 section {
-  padding: var(--headerheight) 0px 0px;
+  padding-top: var(--headerheight);
   min-height: 100vh;
   width: 100vw;
 }
@@ -41,18 +52,43 @@ section:nth-child(even) {
 }
 
 #Home {
-  background-image: url(images/temp-image-300x224.webp);
-  background-position: center;
+  background-image: url(images/MainPage.png);
+  background-position: 50% 50px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   display: flex;
   align-items: center;
   padding: 0px 200px;
+  color: white;
+  background-color: black;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 1px;
 }
 
-#Home p {
-  width: 300px;
+#Home div {
+  width: 650px;
 }
 
 #Sec1 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+#Sec1-main-text {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/* #Sec1:nth-child(odd) {
+  background-color: antiquewhite;
+} */
+
+#Sec1-img-text {
+  height: 600px;
+  background-color: antiquewhite;
 }
