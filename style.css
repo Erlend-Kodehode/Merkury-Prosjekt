@@ -7,10 +7,16 @@
 /* Header height is a variable that is set to the height of the header/nav and the top padding of the sections */
 :root {
   --headerheight: 100px;
+  --primarycolor: #909090;
+  --secondarycolor: #bebebe;
+  --highlightcolor: #909090;
+  --headerprimarycolor: #b2b2b2;
+  --headersecondarycolor: #646464;
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--primarycolor);
 }
 
 /* The font used on most of the text on the page */
@@ -18,7 +24,7 @@ html {
   font-family: "Rubik", sans-serif;
   font-size: 20px;
   line-height: 30px;
-  font-weight: 325px;
+  font-weight: 350;
 }
 
 h1 {
@@ -37,7 +43,7 @@ header {
   top: 0;
   position: fixed;
   height: var(--headerheight);
-  background-color: gray;
+  background-color: var(--headerprimarycolor);
   display: flex;
   gap: 25px;
   width: 100vw;
@@ -51,8 +57,8 @@ nav {
 }
 
 nav a {
-  background-color: white;
-  /* width: 200px; */
+  background-color: var(--headersecondarycolor);
+  color: white;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -67,7 +73,7 @@ section {
 }
 
 section:nth-child(even) {
-  background-color: lightgray;
+  background-color: var(--secondarycolor);
 }
 
 #Sec1 {
@@ -80,9 +86,6 @@ section:nth-child(even) {
   padding: 0px 200px;
   color: white;
   background-color: black;
-  font-size: 25px;
-  line-height: 30px;
-  letter-spacing: 1px;
 }
 
 #Sec1 div {
@@ -119,7 +122,7 @@ section:nth-child(even) {
   height: 600px;
   width: 350px;
   margin: 20px;
-  background-color: antiquewhite;
+  background-color: var(--highlightcolor);
 }
 
 #Sec2-img-text p {
@@ -161,17 +164,28 @@ section:nth-child(even) {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
+  width: 60%;
   flex-wrap: wrap;
+  /* border: 1px red solid; */
 }
 
 .image-info {
-  max-width: 300px;
+  max-width: 350px;
   margin-bottom: 20px;
-  /* border: red solid 1px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.image-info img {
-  width: 300px;
-  height: 150px;
+.image-info p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
 }
