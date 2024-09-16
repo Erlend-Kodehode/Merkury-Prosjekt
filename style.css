@@ -152,18 +152,19 @@ section:nth-child(even) {
 
 #Sec4-boxes {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 50%;
   flex-wrap: wrap;
-  gap: 100px;
-}
-
-#Sec4 img {
-  width: 300px;
-  height: 150px;
 }
 
 .image-info {
   max-width: 300px;
+  margin-bottom: 20px;
+  /* border: red solid 1px; */
+}
+
+.image-info img {
+  width: 300px;
+  height: 150px;
 }
