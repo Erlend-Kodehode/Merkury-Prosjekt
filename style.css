@@ -14,8 +14,12 @@ html {
 }
 
 /* The font used on most of the text on the page */
-/* .main-font {
-} */
+.main-font {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 325px;
+}
 
 h1 {
   font-size: 60px;
@@ -29,9 +33,6 @@ h3 {
   font-size: 25px;
 }
 
-.main-font {
-  font-size: 22px;
-}
 header {
   top: 0;
   position: fixed;
@@ -104,6 +105,9 @@ section:nth-child(even) {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 #Sec2 img {
@@ -130,6 +134,9 @@ section:nth-child(even) {
 }
 #Sec3-text {
   max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 #Sec3-img-div {
   display: flex;
