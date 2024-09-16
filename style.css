@@ -18,7 +18,19 @@ html {
 } */
 
 h1 {
-  font-size: 50px;
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.main-font {
+  font-size: 22px;
 }
 
 nav {
@@ -26,7 +38,7 @@ nav {
   position: fixed;
   width: 100vw;
   display: flex;
-  gap: 50px;
+  gap: 25px;
   align-items: end;
   height: var(--headerheight);
   background-color: gray;
@@ -34,11 +46,12 @@ nav {
 
 nav a {
   background-color: white;
-  width: 100px;
+  /* width: 200px; */
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 section {
@@ -52,7 +65,7 @@ section:nth-child(even) {
 }
 
 #Home {
-  background-image: url(images/MainPage.png);
+  background-image: url(images/Main-Page.png);
   background-position: 50% 50px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -68,9 +81,12 @@ section:nth-child(even) {
 
 #Home div {
   width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-#Sec1 {
+#Sec2 {
   display: flex;
   align-items: center;
   justify-content: end;
@@ -78,17 +94,36 @@ section:nth-child(even) {
   padding-left: 20px;
 }
 
-#Sec1-main-text {
-  width: 1000px;
+#Sec2-main-text {
+  max-width: 1000px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-/* #Sec1:nth-child(odd) {
-  background-color: antiquewhite;
-} */
 
-#Sec1-img-text {
+#Sec2-img-text {
   height: 600px;
   background-color: antiquewhite;
+}
+
+#Sec3 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 100px;
+}
+#Sec3-text {
+  max-width: 1000px;
+}
+#Sec3-img-div {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  max-width: 350px;
+}
+
+#Sec3-bottom-img {
+  position: relative;
+  bottom: 50px;
+  right: 50px;
 }
