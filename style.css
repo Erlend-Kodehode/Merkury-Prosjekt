@@ -4,14 +4,15 @@
   box-sizing: border-box;
 }
 
-/* Header height is a variable that is set to the height of the header/nav and the top padding of the sections */
 /* Various variables */
 :root {
   --headerheight: 100px;
-  --primarycolor: #909090;
+  --primarycolor: #a4a4a4;
   --secondarycolor: #bebebe;
-  --highlightcolor: #888888;
-  --headerprimarycolor: #acacac;
+  --highlightcolor: #727272;
+  /* --highlightcolor: #b5b5b5; */
+  --headerprimarycolor: #909090;
+  --headerprimarycolor: black;
 }
 
 html {
@@ -19,7 +20,12 @@ html {
   background-color: var(--primarycolor);
 }
 
-/* The font used on most of the text on the page */
+/* A hover effect on certain images */
+.img-hover:hover {
+  border: rgba(0, 0, 0, 0) 2px solid;
+}
+
+/* The main font used on the text on the page */
 .main-font {
   font-family: "Rubik", sans-serif;
   font-size: 20px;
@@ -27,17 +33,26 @@ html {
   font-weight: 350;
 }
 
-/* Heading font sizes */
+/* Heading styling*/
 h1 {
   font-size: 60px;
 }
 
 h2 {
   font-size: 35px;
+  margin: 25px 0px;
 }
 
 h3 {
   font-size: 25px;
+}
+
+/* Styling for the big textboxes in certain sections */
+.main-textbox {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* Header styling */
@@ -46,6 +61,10 @@ header {
   position: fixed;
   height: var(--headerheight);
   background-color: var(--headerprimarycolor);
+  /* background-image: url(images/PIA11351~orig.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0px; */
   display: flex;
   gap: 25px;
   width: 100vw;
@@ -61,13 +80,18 @@ nav {
 }
 
 nav a {
-  background-color: var(--highlightcolor);
+  /* background-color: var(--highlightcolor); */
   color: white;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
+}
+
+nav a:hover {
+  background-color: white;
+  color: var(--highlightcolor);
 }
 
 /* Setting sections to viewport height and width with enough padding at the top so that the header doesnt block out any elements */
@@ -101,26 +125,16 @@ section:nth-child(even) {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  text-shadow: 2px 2px 2px black;
 }
 
 /* Second section styling */
 
 #Sec2 {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: end;
   gap: 20px;
-  padding-left: 20px;
-}
-
-#Sec2-main-text {
-  max-width: 1000px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 #Sec2 img {
@@ -133,6 +147,7 @@ section:nth-child(even) {
   width: 350px;
   margin: 20px;
   background-color: var(--highlightcolor);
+  color: white;
 }
 
 #Sec2-img-text p {
@@ -144,15 +159,10 @@ section:nth-child(even) {
 #Sec3 {
   display: flex;
   justify-content: end;
-  align-items: center;
+  align-items: start;
   gap: 100px;
 }
-#Sec3-text {
-  max-width: 1000px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+
 #Sec3-img-div {
   display: flex;
   flex-direction: column;
@@ -170,30 +180,46 @@ section:nth-child(even) {
 
 #Sec4 {
   display: flex;
+  flex-direction: column;
+}
+
+#Sec4 h2 {
+  padding-left: 250px;
+}
+
+#Sec4-main {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #Sec4-boxes {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 80%;
   flex-wrap: wrap;
+  /* border: red 1px solid; */
 }
 
 .image-info {
-  max-width: 350px;
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  /* border: blue 1px solid; */
+  max-width: 390px;
+  margin: 5px 25px;
+}
+
+.image-info img {
+  max-height: 225px;
 }
 
 .image-info p {
-  font-size: 15px;
+  text-align: center;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 19px;
 }
 
 /* Footer styling */
@@ -202,5 +228,10 @@ footer {
   height: 100px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  overflow: hidden;
   background-color: black;
+}
+footer img {
+  height: 500px;
 }
