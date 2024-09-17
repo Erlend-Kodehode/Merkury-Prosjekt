@@ -5,13 +5,13 @@
 }
 
 /* Header height is a variable that is set to the height of the header/nav and the top padding of the sections */
+/* Various variables */
 :root {
   --headerheight: 100px;
   --primarycolor: #909090;
   --secondarycolor: #bebebe;
-  --highlightcolor: #909090;
-  --headerprimarycolor: #b2b2b2;
-  --headersecondarycolor: #646464;
+  --highlightcolor: #888888;
+  --headerprimarycolor: #acacac;
 }
 
 html {
@@ -27,6 +27,7 @@ html {
   font-weight: 350;
 }
 
+/* Heading font sizes */
 h1 {
   font-size: 60px;
 }
@@ -39,6 +40,7 @@ h3 {
   font-size: 25px;
 }
 
+/* Header styling */
 header {
   top: 0;
   position: fixed;
@@ -50,6 +52,8 @@ header {
   z-index: 1;
 }
 
+/* Navbar styling */
+
 nav {
   display: flex;
   gap: 25px;
@@ -57,7 +61,7 @@ nav {
 }
 
 nav a {
-  background-color: var(--headersecondarycolor);
+  background-color: var(--highlightcolor);
   color: white;
   height: 50px;
   display: flex;
@@ -65,6 +69,8 @@ nav a {
   align-items: center;
   padding: 20px;
 }
+
+/* Setting sections to viewport height and width with enough padding at the top so that the header doesnt block out any elements */
 
 section {
   padding-top: var(--headerheight);
@@ -75,6 +81,8 @@ section {
 section:nth-child(even) {
   background-color: var(--secondarycolor);
 }
+
+/* Hero styling */
 
 #Sec1 {
   background-image: url(images/Main-Page.png);
@@ -94,6 +102,8 @@ section:nth-child(even) {
   flex-direction: column;
   gap: 30px;
 }
+
+/* Second section styling */
 
 #Sec2 {
   display: flex;
@@ -129,6 +139,8 @@ section:nth-child(even) {
   margin: 20px;
 }
 
+/* Third Section styling */
+
 #Sec3 {
   display: flex;
   justify-content: end;
@@ -154,6 +166,8 @@ section:nth-child(even) {
   right: 50px;
 }
 
+/* Fourth section styling */
+
 #Sec4 {
   display: flex;
   justify-content: center;
@@ -166,7 +180,6 @@ section:nth-child(even) {
   align-items: center;
   width: 60%;
   flex-wrap: wrap;
-  /* border: 1px red solid; */
 }
 
 .image-info {
@@ -182,6 +195,8 @@ section:nth-child(even) {
   font-weight: 400;
   line-height: 20px;
 }
+
+/* Footer styling */
 
 footer {
   height: 100px;
