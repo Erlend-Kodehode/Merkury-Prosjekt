@@ -55,6 +55,15 @@ h3 {
   gap: 10px;
 }
 
+/* Generic styling for sections with a main text and some images on the side */
+
+.Sec-text-and-img {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 100px;
+}
+
 /* Header styling */
 header {
   top: 0;
@@ -103,6 +112,8 @@ section {
   width: 100vw;
 }
 
+/* Setting every other section to have the secondary color as their background color */
+
 section:nth-child(even) {
   background-color: var(--secondarycolor);
 }
@@ -131,16 +142,8 @@ section:nth-child(even) {
 
 /* Second section styling */
 
-#Sec2 {
-  display: flex;
-  align-items: start;
-  justify-content: end;
-  gap: 20px;
-}
-
-#Sec2 img {
-  width: 350px;
-  height: 70%;
+#Sec2-main-text {
+  margin: 0 auto;
 }
 
 #Sec2-img-text {
@@ -151,17 +154,19 @@ section:nth-child(even) {
   color: white;
 }
 
+#Sec2 img {
+  width: 350px;
+  height: 70%;
+}
+
 #Sec2-img-text p {
   margin: 20px;
 }
 
 /* Third Section styling */
 
-#Sec3 {
-  display: flex;
-  justify-content: end;
-  align-items: start;
-  gap: 100px;
+#Sec3-main-text {
+  margin: 0 auto;
 }
 
 #Sec3-img-div {
@@ -200,14 +205,12 @@ section:nth-child(even) {
   align-items: center;
   width: 80%;
   flex-wrap: wrap;
-  /* border: red 1px solid; */
 }
 
 .image-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: blue 1px solid; */
   max-width: 390px;
   margin: 5px 25px;
 }
