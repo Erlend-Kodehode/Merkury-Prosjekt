@@ -10,9 +10,9 @@
   --primarycolor: #a4a4a4;
   --secondarycolor: #bebebe;
   --highlightcolor: #727272;
-  /* --highlightcolor: #b5b5b5; */
-  --headerprimarycolor: #909090;
-  --headerprimarycolor: black;
+  --navitemcolor: #625d7e;
+  /* --headerprimarycolor: #909090; */
+  /* --headerprimarycolor: black; */
 }
 
 html {
@@ -60,11 +60,11 @@ header {
   top: 0;
   position: fixed;
   height: var(--headerheight);
-  background-color: var(--headerprimarycolor);
-  /* background-image: url(images/PIA11351~orig.jpg);
+  /* background-color: var(--headerprimarycolor); */
+  background-image: url(images/Header-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 0px; */
+  background-position: 0px -680px;
   display: flex;
   gap: 25px;
   width: 100vw;
@@ -80,7 +80,7 @@ nav {
 }
 
 nav a {
-  background-color: var(--highlightcolor);
+  background-color: var(--navitemcolor);
   color: white;
   height: 50px;
   display: flex;
@@ -91,7 +91,7 @@ nav a {
 
 nav a:hover {
   background-color: white;
-  color: var(--highlightcolor);
+  color: var(--navitemcolor);
 }
 
 /* Setting sections to viewport height and width with enough padding at the top so that the header doesnt block out any elements */
