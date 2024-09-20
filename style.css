@@ -11,8 +11,6 @@
   --secondarycolor: #bebebe;
   --highlightcolor: #727272;
   --navitemcolor: #625d7e;
-  /* --headerprimarycolor: #909090; */
-  /* --headerprimarycolor: black; */
 }
 
 html {
@@ -69,7 +67,6 @@ header {
   top: 0;
   position: fixed;
   height: var(--headerheight);
-  /* background-color: var(--headerprimarycolor); */
   background-image: url(images/Header-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
